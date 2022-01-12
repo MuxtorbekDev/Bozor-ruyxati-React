@@ -4,8 +4,8 @@ import ListItem from "../components/ListItem";
 export default function Notes() {
   return (
     <div>
-      {notes.map((m, index) => (
-        <ListItem key={index} notes={m} />
+      {notes.map((note, index) => (
+        <ListItem notes={note} key={index} />
       ))}
     </div>
   );
